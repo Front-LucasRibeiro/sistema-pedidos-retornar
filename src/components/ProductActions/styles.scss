@@ -3,5 +3,87 @@
 
 .productActions{
   margin-top: 18px;
-  
+
+  &__steps{
+    margin-bottom: 18px; 
+    position: relative;
+
+    h3{
+      color: #606870;
+      font-weight: bold;
+    }
+    p{
+      color: $color-text;
+      font-size: $f14;
+      margin-top: 2px;
+    }
+
+    &--step{
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: $color-text;
+      font-size: $f15;
+    }
+  }
+
+  &__optionItem{
+    min-height: 32px;
+
+    @media (min-width: 1180px){
+      &:hover{
+        background-color: rgba(0,0,0, .1);
+        padding: 0 12px 0 0;
+      }
+    }
+  }
+
+  &__option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    cursor: pointer;
+    min-height: 32px;
+
+    &--item{
+      color: #111;
+      font-size: $f15;
+
+      img{
+        margin-right: 12px;
+        max-width: 43px;
+      }
+    }
+    &--check{
+      display: flex;
+    }
+    &--price{
+      font-size: $f15;
+      color: #111;
+      margin-right: 8px;
+    }
+    &--input{
+
+    }
+  }
+}
+
+.chk input {
+  display: none;
+}
+
+.chk span {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  display: block;
+  border: 3px solid #fff;
+  outline: 1px solid #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.chk input:checked+span {
+  background-color: $main-color;
 }

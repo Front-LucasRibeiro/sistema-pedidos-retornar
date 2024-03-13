@@ -1,0 +1,22 @@
+.page-tamanho{
+
+  .productActions__optionItem:hover{
+    padding-left: 8px;
+  }
+
+  .productActions__option{
+    &--price{
+      &:before{
+        content: "+";
+        display: inline-block;
+      }
+    }
+  }
+  
+  .productActions__optionItem{
+    img{
+      display: none;
+      margin-bottom: 16px;
+    }
+  }
+}
