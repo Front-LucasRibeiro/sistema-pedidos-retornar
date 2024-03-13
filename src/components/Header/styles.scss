@@ -1,0 +1,56 @@
+@import '../../styles/geral.scss';
+@import '../../styles/variables.scss';
+
+.header {
+  &__top {
+    background-color: $main-color;
+    height: 52px;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__logo {
+    color: $sec-color;
+    font-weight: bold;
+    font-size: $f24;
+
+    img {
+      width: 20px;
+      height: auto;
+      margin-right: 8px;
+    }
+  }
+
+  &__banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+    max-width: max-content;
+    margin: 0 auto;
+
+    img {
+      border-radius: 8px;
+    }
+  }
+
+  &__voltar {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background-color: $sec-color;
+    position: absolute;
+    left: 10px;
+    top: 26px;
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L7 7L13 1' stroke='%23000000' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(90deg);
+    cursor: pointer;
+  }
+}
