@@ -9,6 +9,10 @@ Projeto sendo executado na versão 16.17.0 do Node, em caso de problemas ao comp
 ## Compilar projeto:
 
 npm start - executa o aplicativo em mode de desenvolvimento
+
+
 npm run build - Cria o aplicativo para produção na pasta build
+
+
 npm test - Inicia o executor de testes no modo de observação
 

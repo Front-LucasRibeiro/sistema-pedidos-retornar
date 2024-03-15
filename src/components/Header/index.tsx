@@ -1,9 +1,8 @@
 
 import React from 'react';
-import './styles.scss';
 import logo from './assets/icon-logo.jpg';
-import ProductInfo from '../ProductInfo';
-import BannerTop from '../BannerTop';
+import { Link } from 'react-router-dom';
+import './styles.scss';
 
 const Header: React.FC = () => {
 
@@ -12,13 +11,15 @@ const Header: React.FC = () => {
       <div className="header__top">
         <div className="header__wrap">
           <div className="header__logo">
-            <img src={logo} alt="peça açaí" />
-            peça açaí
+            <a href={`/`}>
+              <img src={logo} alt="peça açaí" />
+              peça açaí
+            </a>
           </div>
         </div>
       </div>
     </header>
-  ) 
+  )
 }
 
 export default Header;

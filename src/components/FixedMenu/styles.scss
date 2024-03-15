@@ -1,0 +1,80 @@
+@import '../../styles/variables.scss';
+
+.menuActions{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 148px;
+  background-color: $sec-color;
+  padding: 12px 16px 12px 16px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0px -2px 18px #bcb;
+  position: fixed;
+  left: 0;
+  right: 0;
+  max-width: 750px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  &__erros{
+    color: #FF4500;
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  &__pedidos{
+    margin: 16px 0;
+    width: 100%;
+
+    a{
+      max-width: 100%;
+      justify-content: center;
+      text-decoration: none;
+      box-sizing: border-box;
+      font-size: $f14;
+    }
+  }
+
+  div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 85%;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: $main-color;
+    color: $sec-color;
+    font-size: $f14;
+    border: 0;
+    padding: 0 18px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+
+    &:hover{
+      filter: brightness(0.8);
+    }
+  }
+
+  &__inputQtd{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 15%;
+    margin-right: 12px;
+    border:1px solid #c9c7c4;
+    border-radius: 5px;
+    padding: 0 12px;
+    box-sizing: border-box;
+    min-width: 94px;
+    text-align: center;
+  }
+}

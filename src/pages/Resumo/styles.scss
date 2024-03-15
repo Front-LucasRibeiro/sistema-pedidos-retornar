@@ -1,0 +1,94 @@
+@import '../../styles/variables.scss';
+
+.info{
+  margin-top: 45px;
+  text-align: center;
+}
+
+.resumo{
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+  overflow: auto;
+  height: 800px;
+
+  &__lista{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  &__footer{
+    text-align: right;
+    font-size: $f15;
+    margin-top: 18px;
+    span{
+      color: $color-text;
+      font-weight: normal;
+    }
+    color: #111;
+    font-weight: bold;
+  }
+
+  &__wrap{
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 42px 16px 16px;
+    margin-bottom: 18px;
+  }
+
+  h2{
+    font-weight: bold;
+    font-size: $f17;
+    text-align: center;
+    padding: 18px 0;
+  }
+  h3{
+    font-size: $f17;
+    padding: 0 0 18px;
+  }
+  &__item{
+    display: flex;
+    
+    &--info{
+      border-bottom: 1px solid $color-text;
+      width: 100%;
+      padding-left: 14px;
+      padding-bottom: 16px;
+      h4{
+        font-weight: bold;
+        color: #111;
+        font-size: $f16;
+        margin-bottom: 12px;
+      }
+      p{
+        margin: 4px 0;
+        font-size: $f14;
+        color: $color-text;
+
+        span{
+          font-weight: bold;
+          color: #666;
+          font-size: $f14;
+        }
+      }
+    }
+
+    &--id{
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      color: $main-color;
+      font-size: $f15;
+    }
+
+    &--foto{
+      border-bottom: 1px solid $color-text;
+      width: max-content;
+      img{
+        width: 72px;
+        border-radius: 5px;
+        margin-right: 14px;
+      }
+    }
+  }
+}
